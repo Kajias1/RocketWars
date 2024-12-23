@@ -1,0 +1,14 @@
+name: RocketWars
+version: '${version}'
+main: me.kajias.rocketwars.RocketWars
+prefix: RocketWars/AnixitServer
+author: KAJIAS
+description: RocketWars mini game
+softdepend: [PlaceholderAPI, PlayerPoints, Vault, PartyAndFriendsGUI]
+commands:
+  rw:
+    description: Main plugin command.
+  rocketwars:
+    description: Main plugin command.
+  leave:
+    description: Leave command.

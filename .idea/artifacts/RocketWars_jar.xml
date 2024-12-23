@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RocketWars:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RocketWars_jar</output-path>
+    <root id="archive" name="RocketWars.jar">
+      <element id="module-output" name="RocketWars.main" />
+    </root>
+  </artifact>
+</component>

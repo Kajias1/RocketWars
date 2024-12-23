@@ -1,0 +1,467 @@
+game-config:
+  start-countdown: 10
+  long-start-countdown: 30
+  game-duration: 1800
+  drop-boost-duration: 20
+  double-jump-cool-down-ticks: 60
+  rockets-launched-for-bonus: 50
+  rockets-destroyed-for-bonus: 37
+  bonus-reward-for-victory:
+    SOLO:
+      rockets-destroyed:
+        amount: 45
+        reward: 1
+      rockets-launched:
+        amount: 50
+        reward: 1
+      reward: 1
+    DUO:
+      rockets-destroyed:
+        amount: 50
+        reward: 1
+      rockets-launched:
+        amount: 50
+        reward: 1
+      reward: 2
+    TRIO:
+      rockets-destroyed:
+        amount: 50
+        reward: 1
+      rockets-launched:
+        amount: 50
+        reward: 1
+      reward: 2
+      reward-for-place: [ 3, 2, 1 ]
+    QUADRO:
+      rockets-destroyed:
+        amount: 50
+        reward: 1
+      rockets-launched:
+        amount: 50
+        reward: 1
+      reward: 3
+      reward-for-place: [ 3, 2, 1 ]
+    PENTA:
+      rockets-destroyed:
+        amount: 50
+        reward: 1
+      rockets-launched:
+        amount: 50
+        reward: 1
+      reward: 4
+      reward-for-place: [ 4, 3, 2 ]
+  events:
+    event1:
+      time: 300
+      label: '&6&lУскорение предметов'
+      message: '&e&lСобытие > Скорость выпадения всех предметов была увеличена на 20%'
+    event2:
+      time: 600
+      label: '&a&lОзеленение'
+      message: '&a&lСобытие > Все блоки заросли'
+    event3:
+      time: 1020
+      label: '&7&lСтирание первого слоя'
+      message: '&7&lСобытие > Первый слой стен обоих команд был уничтожен'
+    event4:
+      time: 1200
+      label: '&c&lПодрыв всех блоков'
+      message: '&c&lСобытие > Все блоки были взорваны'
+    event5:
+      time: 500
+      label: '&4&lСтирание всех слоев'
+      message: '&c&lСобытие > Все слои стен обоих команд были уничтожены'
+    event6:
+      time: 1620
+      label: '&e&lЧистка карты'
+      message: '&c&lСобытие > Все лишние блоки стёрты, до конца игры: %time%'
+  ship:
+    spawn-period: 20
+    chance: 15
+    structure-name: 'Корабль'
+    hologram: '&eЗабрать лут! &a[ПКМ]'
+    appear-message:
+      title: '&6Заспавнился корабль с лутом!'
+      subtitle: '&cУспейте ограбить его раньше врага!'
+  bonus-cube:
+    spawn-period: 10
+    chance: 10
+    structure-name: 'Бонус'
+    hologram: '&eЗабрать бонус! &a[ПКМ]'
+    appear-message:
+      title: '&6Заспавнился куб с бонусом!'
+      subtitle: '&cУспейте забрать его раньше врага!'
+  game-kit:
+    respawn-item:
+      material: 351
+      name: '&6&lВернуться на базу &7(ПКМ)'
+      slot: 9
+    bow-item:
+      material: 'BOW'
+      name: '&e&lЛук для сбивания ракет'
+      slot: 1
+  game-drops:
+    rockets:
+      period: 5
+      chance: 2
+      categories:
+        light:
+          weight: 12
+          weight-change:
+            1:
+              time: 550
+              weight: 10
+            2:
+              time: 900
+              weight: 9
+          entry:
+            - '&7Мини'
+            - 'BAT'
+            - '&7Пуля'
+            - 'SILVERFISH'
+            - '&7Меч'
+            - 'HUSK'
+            - '&7Страж'
+            - 'GUARDIAN'
+        medium:
+          weight: 3
+          weight-change:
+            1:
+              time: 600
+              weight: 4
+          entry:
+            - '&3Капля'
+            - 'VEX'
+            - '&eФлеш'
+            - 'OCELOT'
+            - '&2Толстяк'
+            - 'CREEPER'
+            - '&eТорпеда'
+            - 'MAGMA_CUBE'
+            - '&eФугас'
+            - 'BLAZE'
+        heavy:
+          weight: 1
+          weight-change:
+            1:
+              time: 770
+              weight: 2
+          entry:
+            - '&c&lХранитель'
+            - 'SPIDER'
+            - '&c&lЩитобой'
+            - 'SPIDER'
+            - '&c&lРазрывная'
+            - 'SPIDER'
+            - '&f&lКапсула'
+            - 'POLAR_BEAR'
+            - '&cРазъярённый толстяк'
+            - 'WITCH'
+    regular-items:
+      period: 5
+      chance: 2
+      items:
+        arrow:
+          weight: 10
+          material: 'ARROW'
+          name: '&fСтрела'
+        shield:
+          weight: 2
+          entry:
+          material: 'SNOW_BALL'
+          name: '&fЩит'
+        fireball:
+          weight: 2
+          material: 'FIREBALL'
+          name: '&eОгненный шар'
+    gadgets:
+      period: 10
+      chance: 5
+      items:
+        spectral-arrow:
+          weight: 7
+          material: 'SPECTRAL_ARROW'
+          name: '&5&lСтрела телепортации'
+          lore:
+            - '&5&lПри попадании в игрока такой'
+            - '&5&lстрелой меняет вас местами!'
+        detonator:
+          weight: 5
+          material: 'REDSTONE_TORCH_ON'
+          name: '&c&lБомбастик'
+          lore:
+            - '&c&lПри нажатии взрывает всё вокруг себя!'
+        time-back:
+          weight: 1
+          material: 'WATCH'
+          name: '&d&lВремя вспять'
+          lore:
+            - '&d&lПосле нажатия возвращает вас в то'
+            - '&d&lместо, где Вы были три секунды назад!'
+    bonus-items:
+      items:
+        heavy-rockets:
+          weight: 1
+          name: '&c&lТри тяжёлых ракеты'
+        enhanced-fireball:
+          weight: 1
+          material: 'FIREBALL'
+          name: '&c&lУсиленный огненный шар'
+          lore:
+            - '&c&lБолее мощная версия огненного шара!'
+        tnt:
+          weight: 1
+          material: 'TNT'
+          name: '&c&lКидающийся динамит'
+          lore:
+            - '&c&lМожно бросить его куда угодно(кроме белой стенки)!'
+        grass-bomb:
+          weight: 1
+          material: 'GRASS'
+          name: '&a&lТравяная бомба'
+          lore:
+            - '&a&lОбрастает все блоки вокруг после броска!'
+        feather:
+          weight: 1
+          material: 'FEATHER'
+          name: '&f&lПёрышко'
+          amount: 2
+          lore:
+            - '&f&lПри нажатии Вы подкидываетесь вперёд!'
+        drop-boost:
+          weight: 1
+          material: 'BLAZE_POWDER'
+          name: '&e&lБуст выпадения'
+          lore:
+            - '&e&lПри нажатии Вам будет выпадать больше'
+            - '&e&lпредметов в течении 20 секунд!'
+hot-bar-items:
+  select-arena-item:
+    material: 'TNT'
+    name: '&6&lВыбрать арену &7(ПКМ)'
+    slot: 2
+  fast-join-item:
+    material: 'BLAZE_POWDER'
+    name: '&e&lБыстрая игра &7(ПКМ)'
+    slot: 5
+  shop-item:
+    material: 'CHEST'
+    name: '&e&lМагазин &7(ПКМ)'
+    slot: 8
+  new-game-item:
+    material: 'PAPER'
+    name: '&e&lНачать новую игру &7(ПКМ)'
+    slot: 1
+  team-select-item:
+    material: 'STAINED_GLASS'
+    name: '&e&lВыбрать команду &7(ПКМ)'
+    slot: 5
+  leave-game-item:
+    material: 'BARRIER'
+    name: '&e&lПокинуть игру &7(ПКМ)'
+    slot: 9
+messages:
+  log:
+    prefix: '&e[RocketWars] '
+    no-lobby: 'Локация лобби не была установлена'
+    config-reloaded: 'Конфигурации перезагружены'
+    must-be-player-to-execute-command: 'Эту команду могут использовать только игроки'
+  prefix: '&6&lRocketWars &8► &7'
+  game-chat-format:
+    default: '&f%s &8→ &7%s'
+    team: '%team_color%[Команде] &f%s &8→ &7%s'
+    global: '%team_color%[Всем] &f%s &8→ &7%s'
+  admin-help:
+    - '&6&lRocketWars &7 Команды для админов'
+    - '&6&m---------------------------------------'
+    - ''
+    - '&e/rw setlobby &f- Установить точку появления игроков в лобби'
+    - '&e/rw create <Название арены> <Название мира> <Название шаблона арены> &f- Создать арену из существующего мира'
+    - '&e/rw disable <Название арены> &f- Отключить арену'
+    - '&e/rw enable <Название арены> &f- Включить арену'
+    - '&e/rw setup <Название арены> &f- Перейти в настройку арены'
+    - '&e/rw list &f- Список текущих арен'
+    - ''
+    - '&6&m---------------------------------------'
+  xyz: '(&eX: &3%x%&7, &eY: &3%y%&7, &eZ: &3%z%&7)'
+  start-countdown: '&7Игра начнётся через &e%time% &7сек.'
+  lobby-was-not-set: '&7Локация лобби не была установлена, телепортирую вас в обычный мир'
+  lobby-was-set: '&aЛокация лобби установлена'
+  arena-created: '&eАрена %arena_name% успешно создана! Переходим в режим настройки арены...'
+  arena-exists: '&7Арена %arena_name% уже существует'
+  arena-does-not-exist: '&7Арены %arena_name% не существует'
+  template-world-not-found: '&7Мира с именем %world_name% не существует'
+  team-color-not-defined: '&7Не указан цвет команды игроков'
+  spawn-set: '&aЛокация спавна установлена'
+  not-in-arena-world: '&7Вы не находитесь в мире арены'
+  arena-not-in-setup: '&7Данная арена не находится в режиме настройки'
+  arena-is-already-in-setup: '&7Арена уже находится в режиме настройки'
+  arena-type-unknown: '&7Неизвестный тип арены'
+  arena-has-been-disabled: '&aАрена %arena_name% успешно отключена'
+  failed-to-disable-arena: '&7Не удалось отключить арену %arena_name%'
+  arena-has-been-enabled: '&aАрена %arena_name% включена'
+  arena-is-enabled: '&7Арена %arena_name% уже включена'
+  arena-name-is-not-specified: '&7Не указано имя арены'
+  entering-setup: '&eПереходим в режим настройки арены...'
+  setup-status: '&7Прогресс настройки &o(сообщения интерактивные)&7:'
+  spawn-point-waiting: '&7Точка ожидания игроков'
+  spawn-point-red: '&7Точка спавна игроков &cкрасной &7команды'
+  spawn-point-green: '&7Точка спавна игроков &aзелёной &7команды'
+  modify-spawn-point-hover-message: '&7Нажмите чтобы установить точку появления игроков в том месте где Вы стоите'
+  arena-type-choice: '&7Укажите тип арены:'
+  modify-hover-message: '&7Нажмите чтобы изменить это значение'
+  finish-setup-button-text: '&a[Закончить настройку арены]'
+  finish-setup-button-hover-message: '&7Нажмите чтобы закончить настройку арены'
+  exiting-setup: '&aНастройка арены завершена!'
+  failed-to-finish-setup: '&7Арена не была настроена правильно'
+  unknown-subcommand: '&7Неизвестный аргумент команды'
+  no-permission: '&7Не хватает прав для выполнения команды'
+  arena-list:
+   - '&7Список арен:'
+   - '&a● &7- арена включена, &8● &7- арена включена и идёт игра'
+   - '&e● &7- арена находится в режиме настройки,  &c● &7- &7арена выключена'
+   - '&7Имя - Мир - Состояние'
+  arena-list-format: '%name%  &7|&f  %world%  &f&7|&f  %state%'
+  arena-list-empty: '&7На данный момент нет ни одной арены'
+  no-available-arenas: '&7Нет свободной арены'
+  arena-is-full: '&7Арена заполнена'
+  not-in-game: '&7Вы не в игре'
+  joined-team-red: '&7Вы присоеденились к команде &cкрасных'
+  joined-team-green: '&7Вы присоеденились к команде &aзелёных'
+  team-is-full: '&7Команда заполнена'
+  game-start-title: '&aУдачной игры!'
+  game-start-info-message:
+    - ''
+    - '                        &cРАКЕТНЫЕ ВОЙНЫ'
+    - '             &eЦель игры состоит в том, чтобы пробить'
+    - '       &eстену вражеской команды с помощью выпадающих вам ракет!'
+    - '&eТакже вам будут выпадать различные гаджеты и бонусы во время игры!'
+    - '                &6Вы играете на проекте &6ANIX&5IT'
+    - ''
+  player-joined: '&a%player% &7присоединился к игре (&e%current%&8/&e%max%&7)'
+  player-left: '&c%player% &7вышел из игры (&e%current%&8/&e%max%&7)'
+  player-left-in-game: '&7&c%player% &7покинул игру.'
+  no-players-left: '&7В игре не осталось игроков. Игра была аннулирована, телепортирую Вас в лобби...'
+  no-commands-in-game: '&7Невозможно выполнить команду во время игры'
+  too-dangerous-to-place: '&7Слишком опасно спавнить ракету здесь!'
+  not-allowed-to-place-on-enemy-base: '&cНельзя спавнить ракеты на вражеской стенке!'
+  not-allowed-to-place-close-to-enemy-base: '&cНельзя спавнить ракеты слишком близко к вражеской стенке!'
+  not-allowed-to-place-outside-arena: '&cНельзя спавнить ракеты вне арены!'
+  victory-title: '&6ВЫ ПОБЕДИЛИ'
+  defeat-title: '&cВЫ ПРОИГРАЛИ'
+  draw-title: '&7НИЧЬЯ!'
+  game-end-subtitle:
+    red-team-victory: '&6Победила команда &cкрасных'
+    green-team-victory: '&6Победила команда &aзелёных'
+    draw: '&eВремя вышло'
+  game-end-top-players:
+    - ''
+    - '           &c&l| ТОП ИГРОКОВ ЗА МАТЧ |'
+    - ''
+    - '                &6&lТоп атакующих'
+    - '  &5&l1 МЕСТО&8: &f%top_1_attacker% &8» &fЗапустил &f%top_1_attacker_rockets_launched% ракет'
+    - '  &6&l2 МЕСТО&8: &f%top_2_attacker% &8» &fЗапустил &f%top_2_attacker_rockets_launched% ракет'
+    - '  &4&l3 МЕСТО&8: &f%top_3_attacker% &8» &fЗапустил &f%top_3_attacker_rockets_launched% ракет'
+    - ''
+    - '                &6&lТоп защитников'
+    - '  &5&l1 МЕСТО&8: &f%top_1_defender% &8» &fЗащитил базу от &f%top_1_defender_rockets_destroyed% ракет'
+    - '  &6&l2 МЕСТО&8: &f%top_2_defender% &8» &fЗащитил базу от &f%top_2_defender_rockets_destroyed% ракет'
+    - '  &4&l3 МЕСТО&8: &f%top_3_defender% &8» &fЗащитил базу от &f%top_3_defender_rockets_destroyed% ракет'
+    - ''
+  reward-message: '&3&lНаграда за игру &6&l+%bonus% бонусов'
+  cant-use-shield-near-wall: '&cНельзя ставить щиты близко к белой стенке!'
+  cant-use-fireball-against-wall: '&cНельзя использовать огненный шар против белой стенки!'
+  cant-use-detonator-against-wall: '&cНельзя использовать бомбастик против белой стенки!'
+  cant-use-tnt-against-wall: '&cНельзя использовать кидающийся динамит против белой стенки!'
+  cant-use-grass-bomb-against-wall: '&cНельзя использовать травяную бомбу против белой стенки!'
+  drop-boost-activated: '&6&l Вы активировали буст на %duration% &6&lсек.'
+  time-back: '&5&lТелепорт назад через: &f%time% &5&lсек.'
+  player-take-bonus-title: '&6Вы подобрали бонус!'
+  game-end-label: '&6&lКонец игры'
+  cant-buy-for-bonuses: '&cНельзя купить за бонусы'
+  insufficient-money: '&cНедостаточно средств'
+  item-purchase-successful: '&6Предмет куплен!'
+  color-purchase-successful: '&6Цвет куплен!'
+  random-color-selection-purchase-successful: '&6Случайный выбор цвета куплен!'
+  rainbow-color-purchase-successful: '&6Переливающийся цвет куплен!'
+  random-color-selection-select: '&6Теперь у вас случайный выбор цвета!'
+  rainbow-color-select: '&6Теперь у вас переливающийся цвет!'
+  item-select: '&6Предмет выбран'
+  color-select: '&6Цвет выбран'
+  item-was-already-bought: '&aУ вас уже в наличии этот предмет'
+  cant-swap-items: '&7Вы не можете перекладывать предметы во вторую руку. Эту возможность можно приобрести в лобби'
+  got-hit-by-spectral-arrow: '&6&lВ вас попали стрелой телепортации'
+  cant-break-enemy-base-blocks: '&cНельзя ломать блоки вражеской стенки'
+  base-teleport-cool-down-message: '&eПодождите %time% сек. перед обратным использованием'
+  not-enough-room-for-players-in-party: '&cНа этой арене недостаточно места для всех игроков в вашем пати!'
+  leader-of-the-party-joined-to-new-arena: '&aЛидер пати присоеденился к арене'
+  leader-of-the-party-left-arena: '&aЛидер пати отключился из игры'
+  team-color:
+    GREEN: '&a'
+    RED: '&c'
+arena-description-format:
+  size: 36
+  menu-title: '&7Выбор арен'
+  arena-slots: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25 ]
+  display-name: '&7%arena_name%'
+  lore:
+    - ''
+    - '&7Игроки: &a%arena_players%/%arena_players_total%'
+    - '&7Карта: &a%arena_name%'
+    - '&7Статус: &aОжидание...'
+    - ''
+scoreboard:
+  title: '&6&lROCKETWARS'
+  lobby:
+    - '&7%localtime_time_dd/MM/yy%'
+    - ''
+    - 'Ник: &e%player_name%'
+    - 'Ранг: &l%vault_prefix%'
+    - ''
+    - 'Аниксы: &5&l%playerpoints_points%'
+    - 'Бонусы: &6&l%vault_eco_balance_formatted%'
+    - ''
+    - 'W/G: &e%rocketwars_win_game_ratio%'
+    - 'Побед &e%rocketwars_games_won%'
+    - 'Игр: &e%rocketwars_games_played%'
+    - 'Ракет сбито &e%rocketwars_rockets_destroyed%'
+    - 'Ракет выпущено: &e%rocketwars_rockets_launched%'
+    - ''
+    - '&6&lANIX&5&lIT&8&l.&4&lNET'
+  waiting:
+    - '&7%localtime_time_dd/MM/yy%'
+    - ''
+    - 'Карта: &e%rocketwars_arena_name%'
+    - 'Игроки: &e%rocketwars_arena_players%/%rocketwars_arena_players_total%'
+    - 'Режим: &e%rocketwars_arena_type%'
+    - ''
+    - '&6&lANIX&5&lIT&8&l.&4&lNET'
+  starting:
+    - '&7%localtime_time_dd/MM/yy%'
+    - ''
+    - 'Карта: &e%rocketwars_arena_name%'
+    - 'Игроки: &e%rocketwars_arena_players%/%rocketwars_arena_players_total%'
+    - 'Режим: &e%rocketwars_arena_type%'
+    - ''
+    - 'До старта: &e%rocketwars_game_start_countdown%'
+    - ''
+    - '&6&lANIX&5&lIT&8&l.&4&lNET'
+  started:
+    - '&7%localtime_time_dd/MM/yy%'
+    - ''
+    - '&c&l⚑ %rocketwars_arena_players_red%'
+    - '&a&l⚑ %rocketwars_arena_players_green%'
+    - ''
+    - '%rocketwars_game_event_label%'
+    - 'Через: &e%rocketwars_game_time_before_event%'
+    - ''
+    - '&6&lANIX&5&lIT&8&l.&4&lNET'
+  ending:
+    - '&7%localtime_time_dd/MM/yy%'
+    - ''
+    - '&c&l⚑ %rocketwars_arena_players_red%'
+    - '&a&l⚑ %rocketwars_arena_players_green%'
+    - ''
+    - 'Конец игры: &e%rocketwars_game_winner_team%'
+    - ''
+    - '&6&lANIX&5&lIT&8&l.&4&lNET'

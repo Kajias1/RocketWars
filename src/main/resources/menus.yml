@@ -1,0 +1,1083 @@
+menus:
+  colors: [ 1, 2, 3, 4, 5, 6, 9, 10, 11, 14 ]
+  team-select:
+    title: '&8Выбор команды'
+    size: 27
+    items:
+      red-team:
+        material: 'STAINED_GLASS'
+        data: 14
+        slot: 11
+        name: '&cКрасная команда [%players_now%/%players_max%]'
+        team-color: 'RED'
+      green-team:
+        material: 'STAINED_GLASS'
+        data: 5
+        slot: 17
+        name: '&aЗелёная команда [%players_now%/%players_max%]'
+        team-color: 'GREEN'
+    team-select-button-lore:
+      empty:
+        - '&7В данной команде пока нет игроков'
+      has-players:
+        - ''
+        - '&7Игроки:'
+    player-list-row: ' &7» %player_name%'
+  main-shop:
+    title: '&8Наборы для игроков'
+    size: 54
+    filler-items:
+      red:
+        material: 'STAINED_GLASS_PANE'
+        data: 14
+        slots: [ 0, 1, 7, 8, 9, 17, 36, 44, 45, 46, 52, 53 ]
+      white:
+        material: 'STAINED_GLASS_PANE'
+        data: 0
+        slots: [ 2, 3, 4, 5, 6, 47, 48, 49, 50, 51 ]
+      black:
+        material: 'STAINED_GLASS_PANE'
+        data: 15
+        slots: [ 18, 26, 27, 35 ]
+    armor-menus:
+      boots:
+        material: 'LEATHER_BOOTS'
+        name: '&6&lВыбрать ботинки'
+        lore:
+          - ''
+          - '&6&lБотинки ускоряют передвижение'
+          - '&6&lи накладывают защиту!'
+          - ''
+        slot: 20
+      helmets:
+        material: 'LEATHER_HELMET'
+        name: '&6&lВыбрать шапку'
+        lore:
+          - ''
+          - '&6&lШапки накладывают исцеление'
+          - '&6&lи дают дополнительное здоровье!'
+          - ''
+        slot: 24
+    armor-visuals-menus:
+      boots:
+        material: 'WOOL'
+        name: '&6&lКастомизировать ботинки'
+        lore:
+          - ''
+          - '&6&lВы можете купить различные'
+          - '&6&lвизуальные эффекты на ваши ботинки!'
+          - ''
+        slot: 29
+      helmets:
+        material: 'WOOL'
+        name: '&6&lКастомизировать шапки'
+        lore:
+          - ''
+          - '&6&lВы можете купить различные'
+          - '&6&lвизуальные эффекты на ваши шапки!'
+          - ''
+        slot: 33
+    bonus-items:
+      second-hand:
+        material: 'FLINT_AND_STEEL'
+        name: '&e&lВторая рука'
+        lore:
+          - ''
+          - '&e&lВы сможете перекладывать'
+          - '&e&lнужные стрелы во вторую руку!'
+          - ''
+          - '&7&lПассивная способность'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 10
+        prices:
+          anix: [ 25, 39, 69, 89, 139, 219 ]
+          bonus: [ 79, 117, 189, 289, 449 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &b&lВЫГОДА 17% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 33%'
+            - '&6« &4&lВЫГОДА 43%'
+            - '&6« &6&lВЫГОДА 60%'
+            - '&6« &5&lВЫГОДА 73%'
+      double-jump:
+        material: 'RABBIT_FOOT'
+        name: '&2&lДвойной прыжок'
+        lore:
+          - ''
+          - '&2&lПосле двойного нажатия пробела Вы'
+          - '&2&lполучаете преимущество в прыжке!'
+          - ''
+          - '&7&lПассивная способность'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 13
+        prices:
+          anix: [ 49, 79, 129, 169, 279, 429 ]
+          bonus: [ 149, 269, 429, 569, 949 ]
+          benefit:
+            - '&6« &9&lСКИДКА ДЛЯ БОНУСОВ 7%'
+            - '&6« &b&lВЫГОДА 11%'
+            - '&6« &9&lВЫГОДА 25%'
+            - '&6« &4&lВЫГОДА 30%'
+            - '&6« &6&lВЫГОДА 47%'
+            - '&6« &5&lВЫГОДА 55%'
+      spectral-arrow:
+        material: 'SPECTRAL_ARROW'
+        name: '&e&lСтрелы телепортации'
+        lore:
+          - ''
+          - '&e&lПри попадании в игрока такой'
+          - '&e&lстрелой меняет вас местами!'
+          - ''
+          - '&7&lПосле покупки будет выпадать во время игры'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 16
+        prices:
+          anix: [ 29, 49, 79, 99, 149, 249 ]
+          bonus: [ 89, 144, 249, 339, 469 ]
+          benefit:
+            - '&6« &6&lСКИДКА ДЛЯ БОНУСОВ 11%'
+            - '&6« &b&lВЫГОДА 11%'
+            - '&6« &9&lВЫГОДА 40%'
+            - '&6« &4&lВЫГОДА 43%'
+            - '&6« &6&lВЫГОДА 55%'
+            - '&6« &5&lВЫГОДА 70%'
+      explosive-arrow:
+        material: 'ARROW'
+        name: '&4&lПодрывные стрелы'
+        lore:
+          - ''
+          - '&4&lПри попадании в игрока ваши стрелы'
+          - '&4&lбудут взрываться с шансом 33%'
+          - ''
+          - '&7&lПассивная способность'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 22
+        prices:
+          anix: [ 35, 59, 89, 119, 179, 279 ]
+          bonus: [ 117, 189, 289, 389, 579]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 20%'
+            - '&6« &b&lВЫГОДА 20%'
+            - '&6« &9&lВЫГОДА 40%'
+            - '&6« &4&lВЫГОДА 43%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 72%'
+      grass-bomb:
+        material: 'GRASS'
+        name: '&a&lТравяная бомба'
+        lore:
+          - ''
+          - '&a&lОбрастает все блоки вокруг после броска!'
+          - ''
+          - '&7&lПосле покупки будет выпадать из бонусов'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 37
+        prices:
+          anix: [ 44, 69, 117, 149, 239, 379 ]
+          bonus: [ 129, 189, 369, 529, 779 ]
+          benefit:
+            - ''
+            - '&6« &b&lВЫГОДА 11%'
+            - '&6« &9&lВЫГОДА 25%'
+            - '&6« &4&lВЫГОДА 35%'
+            - '&6« &6&lВЫГОДА 50%'
+            - '&6« &5&lВЫГОДА 60%'
+      base-teleport-cool-down:
+        material: 'BED'
+        type-id: 351
+        data: 1
+        name: '&a&lТелепорт на базу без задержки'
+        lore:
+          - ''
+          - '&a&lПосле покупки вы сможете возвращаться!'
+          - '&a&lк себе на базу без ограничений по времени'
+          - ''
+          - '&7&lПассивная способность'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 31
+        prices:
+          anix: [ 35, 59, 89, 119, 179, 279 ]
+          bonus: [ 117, 189, 289, 389, 579]
+          benefit:
+            - ''
+            - ''
+            - ''
+            - ''
+            - ''
+            - ''
+      detonator:
+        material: 'REDSTONE_TORCH_ON'
+        name: '&c&lБомбастик'
+        lore:
+          - ''
+          - '&c&lПри нажатии взрывает всё вокруг себя!'
+          - ''
+          - '&7&lПосле покупки будет выпадать во время игры'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 40
+        prices:
+          anix: [ 35, 59, 99, 129, 189, 289 ]
+          bonus: [ 117, 189, 329, 429, 579 ]
+          benefit:
+            - ''
+            - '&6« &b&lВЫГОДА 13%'
+            - '&6« &9&lВЫГОДА 25%'
+            - '&6« &4&lВЫГОДА 40%'
+            - '&6« &6&lВЫГОДА 52%'
+            - '&6« &5&lВЫГОДА 70%'
+      time-back:
+        material: 'WATCH'
+        name: '&d&lВремя вспять'
+        lore:
+          - ''
+          - '&d&lПосле нажатия возвращает вас в то'
+          - '&d&lместо, где Вы были три секунды назад!'
+          - ''
+          - '&d&lПолностью восстанавливает'
+          - '&d&lздоровье после телепортации'
+          - ''
+          - '&7&lПосле покупки будет выпадать во время игры'
+          - ''
+          - '&6» &f&lКупить &6«'
+          - ''
+        slot: 43
+        prices:
+          anix: [ 29, 49, 79, 99, 149, 249 ]
+          bonus: [ 89, 144, 249, 339, 469 ]
+          benefit:
+            - '&6« &6&lСКИДКА ДЛЯ БОНУСОВ 11%'
+            - '&6« &b&lВЫГОДА 11%'
+            - '&6« &9&lВЫГОДА 40%'
+            - '&6« &4&lВЫГОДА 43%'
+            - '&6« &6&lВЫГОДА 55%'
+            - '&6« &5&lВЫГОДА 70%'
+  armor-shop:
+    title: '&8Выбор предмета'
+    size: 54
+    fillers:
+      not-bought:
+        material: 351
+        data: 8
+        lore:
+          - ''
+          - '&7Нет в наличии'
+    boots:
+      material: 'LEATHER_BOOTS'
+      description-format:
+        enchantments-list:
+          - ''
+          - '&7&lЗАЧАРОВАНИЯ:'
+        effects-list:
+          - ''
+          - '&7&lЭФФЕКТЫ:'
+      entries:
+        1:
+          name: '&7Стандартные ботинки'
+          slot: 4
+          color: 0x808080 #gray
+          enchantments:
+            PROTECTION_FALL: 2
+          effects: null
+          lore:
+            enchantments:
+              - 'Невесомость II'
+            effects: []
+          prices: null
+        2:
+          name: '&fУлучшенные ботинки'
+          slot: 11
+          color: 16777215 #white
+          enchantments:
+            PROTECTION_FALL: 3
+            THORNS: 3
+            PROTECTION_PROJECTILE: 3
+            PROTECTION_EXPLOSIONS: 3
+          effects: null
+          lore:
+            enchantments:
+              - 'Невесомость III'
+              - 'Шипы III'
+              - 'Защита от снарядов III'
+              - 'Защита от взрывов III'
+            effects: []
+          prices:
+            anix: [ 15, 25, 35, 49, 75, 109 ]
+            bonus: [ 45, 75, 105, 144, 219 ]
+        3:
+          name: '&fУлучшенные ботинки +'
+          slot: 15
+          color: 16777215 #white
+          enchantments:
+            PROTECTION_FALL: 4
+            THORNS: 3
+            PROTECTION_PROJECTILE: 3
+            PROTECTION_EXPLOSIONS: 3
+          effects: null
+          lore:
+            enchantments:
+              - 'Невесомость IV'
+              - 'Шипы III'
+              - 'Защита от снарядов III'
+              - 'Защита от взрывов III'
+            effects: []
+          prices:
+            anix: [ 19, 29, 49, 69, 99, 149 ]
+            bonus: [ 59, 89, 149, 199, 299 ]
+        4:
+          name: '&1Ботинки Бегуна'
+          slot: 19
+          color: 255 #blue
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 3
+            PROTECTION_PROJECTILE: 3
+            PROTECTION_EXPLOSIONS: 3
+          effects:
+            SPEED: 0
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы III'
+              - 'Защита от снарядов III'
+              - 'Защита от взрывов III'
+            effects:
+              - 'Скорость I'
+          prices:
+            anix: [ 25, 39, 59, 79, 99, 159 ]
+            bonus: [ 89, 117, 179, 237, 299 ]
+        5:
+          name: '&2Ботинки Прыгуна'
+          slot: 25
+          color: 32768 #green
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 3
+            PROTECTION_PROJECTILE: 3
+            PROTECTION_EXPLOSIONS: 3
+          effects:
+            JUMP: 1
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы III'
+              - 'Защита от снарядов III'
+              - 'Защита от взрывов III'
+            effects:
+              - 'Прыгучесть II'
+          prices:
+            anix: [ 25, 39, 59, 79, 99, 149 ]
+            bonus: [ 89, 117, 179, 237, 299 ]
+        6:
+          name: '&bБотинки Бегуна Pro'
+          slot: 28
+          color: 65535 #aqua
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 3
+            PROTECTION_PROJECTILE: 3
+            PROTECTION_EXPLOSIONS: 3
+          effects:
+            SPEED: 1
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы III'
+              - 'Защита от снарядов III'
+              - 'Защита от взрывов III'
+            effects:
+              - 'Скорость II'
+          prices:
+            anix: [ 29, 39, 59, 89, 139, 189 ]
+            bonus: [ 79, 117, 179, 269, 429 ]
+        7:
+          name: '&aБотинки Прыгуна Pro'
+          slot: 34
+          color: 65280 #lime
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 3
+            PROTECTION_PROJECTILE: 3
+            PROTECTION_EXPLOSIONS: 3
+          effects:
+            JUMP: 2
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы III'
+              - 'Защита от снарядов III'
+              - 'Защита от взрывов III'
+            effects:
+              - 'Прыгучесть III'
+          prices:
+            anix: [ 29, 39, 59, 89, 139, 189 ]
+            bonus: [ 79, 117, 179, 269, 449 ]
+        8:
+          name: '&4&lБОТИНКИ CARTEL'
+          slot: 38
+          color: 16711680 #red
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 5
+            PROTECTION_PROJECTILE: 5
+            PROTECTION_EXPLOSIONS: 5
+            PROTECTION_FIRE: 5
+          effects:
+            SPEED: 1
+            JUMP: 2
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы V'
+              - 'Защита от снарядов V'
+              - 'Защита от взрывов V'
+              - 'Огнеустойчивость V'
+            effects:
+              - 'Скорость II'
+              - 'Прыгучесть III'
+          prices:
+            anix: [ 49, 79, 129, 179, 279, 389 ]
+            bonus: [ 149, 269, 449, 589, 888 ]
+        9:
+          name: '&6&lБОТИНКИ MANIFEST'
+          slot: 42
+          color: 16753920 #orange
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 5
+            PROTECTION_PROJECTILE: 5
+            PROTECTION_EXPLOSIONS: 5
+            PROTECTION_FIRE: 5
+            PROTECTION_ENVIRONMENTAL: 3
+          effects:
+            SPEED: 1
+            JUMP: 3
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы V'
+              - 'Защита от снарядов V'
+              - 'Защита от взрывов V'
+              - 'Огнеустойчивость V'
+              - 'Защита III'
+            effects:
+              - 'Скорость II'
+              - 'Прыгучесть IV'
+          prices:
+            anix: [ 59, 89, 139, 189, 329, 469 ]
+            bonus: [ 177, 329, 469, 629, 989 ]
+        10:
+          name: '&5&lБОТИНКИ ANIX'
+          slot: 49
+          color: 8388736 #purple
+          enchantments:
+            PROTECTION_FALL: 5
+            THORNS: 5
+            PROTECTION_PROJECTILE: 5
+            PROTECTION_EXPLOSIONS: 5
+            PROTECTION_FIRE: 5
+            PROTECTION_ENVIRONMENTAL: 5
+          effects:
+            SPEED: 2
+            JUMP: 3
+          lore:
+            enchantments:
+              - 'Невесомость V'
+              - 'Шипы V'
+              - 'Защита от снарядов V'
+              - 'Защита от взрывов V'
+              - 'Огнеустойчивость V'
+              - 'Защита V'
+            effects:
+              - 'Скорость III'
+              - 'Прыгучесть IV'
+          prices:
+            anix: [ 69, 109, 169, 229, 369, 549 ]
+            bonus: [ 199, 349, 549, 749, 1149 ]
+    helmets:
+      material: 'LEATHER_HELMET'
+      description-format:
+        enchantments-list:
+          - ''
+          - '&7&lЗАЧАРОВАНИЯ:'
+        effects-list:
+          - ''
+          - '&7&lЭФФЕКТЫ:'
+      entries:
+        1:
+          name: '&7Стандартная шапка'
+          slot: 4
+          color: 8421504 #gray
+          enchantments:
+            PROTECTION_FIRE: 1
+            PROTECTION_EXPLOSIONS: 1
+            PROTECTION_PROJECTILE: 1
+            THORNS: 1
+          effects: []
+          lore:
+            enchantments:
+              - 'Огнеупорность I'
+              - 'Защита от взрывов I'
+              - 'Защита от снарядов I'
+              - 'Шипы I'
+            effects: []
+          prices: null
+        2:
+          name: '&fУлучшенная шапка'
+          slot: 11
+          color: 16777215 #white
+          enchantments:
+            PROTECTION_FIRE: 2
+            PROTECTION_EXPLOSIONS: 2
+            PROTECTION_PROJECTILE: 2
+            THORNS: 2
+          effects: []
+          lore:
+            enchantments:
+              - 'Огнеупорность II'
+              - 'Защита от взрывов II'
+              - 'Защита от снарядов II'
+              - 'Шипы II'
+            effects: []
+          prices:
+            anix: [ 9, 17, 25, 39, 59, 89 ]
+            bonus: [ 25, 49, 79, 117, 189 ]
+        3:
+          name: '&fУлучшенная шапка +'
+          slot: 15
+          color: 16777215 #white
+          enchantments:
+            PROTECTION_FIRE: 3
+            PROTECTION_EXPLOSIONS: 3
+            PROTECTION_PROJECTILE: 3
+            THORNS: 3
+          effects: []
+          lore:
+            enchantments:
+              - 'Огнеупорность III'
+              - 'Защита от взрывов III'
+              - 'Защита от снарядов III'
+              - 'Шипы III'
+            effects: []
+          prices:
+            anix: [ 17, 25, 39, 59, 89, 139 ]
+            bonus: [ 49, 79, 117, 177, 289 ]
+        4:
+          name: '&dШапка Регенерации'
+          slot: 19
+          color: 16771187 #gold
+          enchantments:
+            PROTECTION_FIRE: 3
+            PROTECTION_EXPLOSIONS: 3
+            PROTECTION_PROJECTILE: 3
+            THORNS: 3
+          effects:
+            REGENERATION: 0
+          lore:
+            enchantments:
+              - 'Огнеупорность III'
+              - 'Защита от взрывов III'
+              - 'Защита от снарядов III'
+              - 'Шипы III'
+            effects:
+              - 'Регенерация I'
+          prices:
+            anix: [ 25, 39, 59, 79, 129, 179 ]
+            bonus: [ 89, 129, 177, 269, 429 ]
+        5:
+          name: '&cШапка Здоровья'
+          slot: 25
+          color: 16711680 #red
+          enchantments:
+            PROTECTION_FIRE: 3
+            PROTECTION_EXPLOSIONS: 3
+            PROTECTION_PROJECTILE: 3
+            THORNS: 3
+          effects:
+            HEALTH_BOOST: 0
+          lore:
+            enchantments:
+              - 'Огнеупорность III'
+              - 'Защита от взрывов III'
+              - 'Защита от снарядов III'
+              - 'Шипы III'
+            effects:
+              - 'Здоровье ❤x2'
+          prices:
+            anix: [ 19, 29, 49, 69, 99, 149 ]
+            bonus: [ 59, 89, 144, 229, 289 ]
+        6:
+          name: '&dШапка Регенерации Pro'
+          slot: 28
+          color: 16771187 #gold
+          enchantments:
+            PROTECTION_FIRE: 3
+            PROTECTION_EXPLOSIONS: 3
+            PROTECTION_PROJECTILE: 3
+            THORNS: 3
+          effects:
+            REGENERATION: 1
+          lore:
+            enchantments:
+              - 'Огнеупорность III'
+              - 'Защита от взрывов III'
+              - 'Защита от снарядов III'
+              - 'Шипы III'
+            effects:
+              - 'Регенерация II'
+          prices:
+            anix: [ 29, 49, 79, 99, 149, 199 ]
+            bonus: [ 99, 169, 269, 329, 449 ]
+        7:
+          name: '&cШапка Здоровья Pro'
+          slot: 34
+          color: 16711680 #red
+          enchantments:
+            PROTECTION_FIRE: 3
+            PROTECTION_EXPLOSIONS: 3
+            PROTECTION_PROJECTILE: 3
+            THORNS: 3
+          effects:
+            HEALTH_BOOST: 1
+          lore:
+            enchantments:
+              - 'Огнеупорность III'
+              - 'Защита от взрывов III'
+              - 'Защита от снарядов III'
+              - 'Шипы III'
+            effects:
+              - 'Здоровье ❤x4'
+          prices:
+            anix: [ 29, 49, 79, 99, 149, 199 ]
+            bonus: [ 99, 169, 269, 329, 449 ]
+        8:
+          name: '&4&lШАПКА CARTEL'
+          slot: 38
+          color: 16711680 #red
+          enchantments:
+            PROTECTION_FIRE: 5
+            PROTECTION_EXPLOSIONS: 5
+            PROTECTION_PROJECTILE: 5
+            THORNS: 5
+          effects:
+            REGENERATION: 1
+            HEALTH_BOOST: 1
+          lore:
+            enchantments:
+              - 'Огнеупорность V'
+              - 'Защита от взрывов V'
+              - 'Защита от снарядов V'
+              - 'Шипы V'
+            effects:
+              - 'Регенерация II'
+              - 'Здоровье ❤x4'
+          prices:
+            anix: [ 39, 59, 89, 119, 189, 269 ]
+            bonus: [ 117, 189, 269, 369, 569 ]
+        9:
+          name: '&6&lШАПКА MANIFEST'
+          slot: 42
+          color: 16753920 #orange
+          enchantments:
+            PROTECTION_FIRE: 5
+            PROTECTION_EXPLOSIONS: 5
+            PROTECTION_PROJECTILE: 5
+            THORNS: 5
+            PROTECTION_ENVIRONMENTAL: 3
+          effects:
+            REGENERATION: 1
+            HEALTH_BOOST: 2
+          lore:
+            enchantments:
+              - 'Огнеупорность V'
+              - 'Защита от взрывов V'
+              - 'Защита от снарядов V'
+              - 'Шипы V'
+              - 'Защита III'
+            effects:
+              - 'Регенерация II'
+              - 'Здоровье ❤x6'
+          prices:
+            anix: [ 49, 79, 119, 159, 229, 339 ]
+            bonus: [ 144, 249, 379, 539, 749 ]
+        10:
+          name: '&5&lШАПКА ANIX'
+          slot: 49
+          color: 8388736 #purple
+          enchantments:
+            PROTECTION_FIRE: 5
+            PROTECTION_EXPLOSIONS: 5
+            PROTECTION_PROJECTILE: 5
+            THORNS: 5
+            PROTECTION_ENVIRONMENTAL: 5
+          effects:
+            REGENERATION: 2
+            HEALTH_BOOST: 3
+          lore:
+            enchantments:
+              - 'Огнеупорность V'
+              - 'Защита от взрывов V'
+              - 'Защита от снарядов V'
+              - 'Шипы V'
+              - 'Защита V'
+            effects:
+              - 'Регенерация III'
+              - 'Здоровье ❤x8'
+          prices:
+            anix: [ 59, 89, 139, 189, 289, 449 ]
+            bonus: [ 177, 289, 449, 629, 949 ]
+  item-purchase:
+    title: '&8Покупка'
+    size: 27
+    item-description-format:
+      both-prices:
+        - ''
+        - '&fЦена: &5&l%price_anix% Аниксов %benefit%'
+        - '&fЦена: &6&l%price_bonus% Бонусов'
+        - ''
+        - '&fСрок(дни): %color%%period%'
+        - ''
+        - '&6» &fКупить за &5&lАниксы &f(&lЛКМ&f) &6«'
+        - '&6» &fКупить за &6&lБонусы &f(&lПКМ&f) &6«'
+        - ''
+      anix-prices:
+        - ''
+        - '&fЦена: &5&l%price_anix% Аниксов %benefit%'
+        - ''
+        - '&fСрок(дни): %color%%period%'
+        - ''
+        - '&6» &fКупить за &5&lАниксы &f(&lЛКМ&f) &6«'
+        - ''
+      colors:
+        - '&b&l'
+        - '&9&l'
+        - '&a&l'
+        - '&4&l'
+        - '&6&l'
+        - '&5&l'
+  armor-visuals-shop:
+    title: '&8Кастомизация'
+    size: 45
+    selected-armor-slot: 20
+    filler-items:
+      red:
+        material: 'STAINED_GLASS_PANE'
+        data: 14
+        slots: [ 0, 1, 7, 8, 9, 17, 27, 35, 36, 37, 43, 44 ]
+      white:
+        material: 'STAINED_GLASS_PANE'
+        data: 0
+        slots: [ 18, 26 ]
+      black:
+        material: 'STAINED_GLASS_PANE'
+        data: 15
+        slots: [ 2, 3, 4, 5, 6, 38, 39, 40, 41, 42 ]
+    visuals:
+      boots:
+        color-glass:
+          material: 'STAINED_GLASS'
+          name: '&6&lВыбрать цвет стекла'
+          lore:
+            - ''
+            - '&6&lВаши ботинки будут красить стекло'
+            - '&6&lпод ногами в выбранный Вами цвет'
+          slot: 23
+        color-boots:
+          material: 'LEATHER_BOOTS'
+          name: '&6&lВыбрать цвет ботинок'
+          lore:
+            - ''
+            - '&6&lВаши ботинки будут покрашены'
+            - '&6&lв выбранный Вами цвет'
+          slot: 24
+      helmet:
+        fireworks:
+          material: 'FIREWORK'
+          name: '&6&lВыбрать фейерверки &5(Скоро)'
+          lore:
+            - ''
+          slot: 23
+        color-helmet:
+          material: 'LEATHER_HELMET'
+          name: '&6&lВыбрать цвет шапки'
+          lore:
+            - ''
+            - '&6&lВаша шапка будет покрашена'
+            - '&6&lв выбранный Вами цвет'
+          slot: 24
+  color-select:
+    title: '&8Выбор цвета'
+    size: 54
+    material: 'STAINED_GLASS'
+    do-not-have-color-message: '&7У вас нет цветов в наличии для данного предмета'
+    buttons:
+      random-color-toggle:
+        player-skull-id: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmMyNzEwNTI3MTllZjY0MDc5ZWU4YzE0OTg5NTEyMzhhNzRkYWM0YzI3Yjk1NjQwZGI2ZmJkZGMyZDZiNWI2ZSJ9fX0='
+        slot: 38
+        name: '&6 Случайный цвет'
+        type: 'RANDOM_SELECTION'
+        lore:
+          - ''
+          - '&f&l В каждой новой игре у вас будет'
+          - '&f&l случайный цвет предмета или стекла'
+          - '&7&l (Цвета которые есть у Вас в наличии)'
+          - ''
+        prices:
+          anix: [ 25, 39, 59, 79, 119, 179 ]
+          bonus: [ 69, 139, 199, 279, 429 ]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 15%'
+            - '&6« &b&lВЫГОДА 25% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 30%'
+            - '&6« &4&lВЫГОДА 40% &4&l+ &a&lСКИДКА ДЛЯ БОНУСОВ 3%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 67%'
+      rainbow-color-toggle:
+        player-skull-id: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzY5ZTNlNmU1YjJiOTJmMGJlYjM2OGI3MzhiOTkzZDdiYTIyNWJmOWJiMjc1OGJmYzlmYzJkYWJhNGE1YTdkIn19fQ=='
+        slot: 40
+        name: '&6 Переливающийся цвет'
+        type: 'RAINBOW'
+        lore:
+          - ''
+          - '&f&l В каждой новой игре у вас будет'
+          - '&f&l переливающийся цвет предмета или стекла'
+          - '&7&l (Цвета которые есть у Вас в наличии)'
+          - ''
+        prices:
+          anix: [ 39, 59, 89, 119, 189, 289 ]
+          bonus: [ 99, 189, 299, 492, 639 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 9%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47% &4&l+ &a&lСКИДКА ДЛЯ БОНУСОВ 1%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 69%'
+    color-block-list-menu-button:
+      material: 'PAPER'
+      slot: 42
+      name: '&6Настроить показываемые цвета'
+      lore:
+        - ''
+        - '&f&lВы можете поместить ненужные вам цвета в'
+        - '&f&lчёрный список чтобы они не показывались'
+        - '&f&lв переливающейся броне или случайном выборе'
+        - ''
+    colors:
+      orange:
+        data: 1
+        slot: 10
+        prices:
+          anix: [ 29, 49, 79, 99, 149, 229 ]
+          bonus: [ 89, 149, 237, 299, 499 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 59%'
+      magenta:
+        data: 2
+        slot: 11
+        prices:
+          anix: [ 25, 39, 49, 79, 139, 199 ]
+          bonus: [ 79, 117, 149, 237, 417 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47%'
+            - '&6« &6&lВЫГОДА 63%'
+            - '&6« &5&lВЫГОДА 75%'
+      aqua:
+        data: 3
+        slot: 12
+        prices:
+          anix: [ 39, 69, 99, 139, 219, 219 ]
+          bonus: [ 117, 199, 299, 417, 649 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 69%'
+      yellow:
+        data: 4
+        slot: 13
+        prices:
+          anix: [ 39, 69, 99, 139, 229, 339 ]
+          bonus: [ 117, 199, 299, 417, 689 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 69%'
+      lime:
+        data: 5
+        slot: 14
+        prices:
+          anix: [ 35, 59, 89, 139, 219, 329 ]
+          bonus: [ 101, 177, 269, 417, 649 ]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 15%'
+            - '&6« &b&lВЫГОДА 25% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 40% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &6&lВЫГОДА 62%'
+            - '&6« &5&lВЫГОДА 70%'
+      pink:
+        data: 6
+        slot: 15
+        prices:
+          anix: [ 39, 59, 99, 159, 229, 339 ]
+          bonus: [ 117, 177, 299, 479, 689 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47%'
+            - '&6« &6&lВЫГОДА 57%'
+            - '&6« &5&lВЫГОДА 69%'
+      light-gray:
+        data: 8
+        slot: 16
+        prices:
+          anix: [ 25, 39, 69, 89, 139, 199 ]
+          bonus: [ 79, 117, 199, 269, 417 ]
+          benefit:
+            - '&6« &6&lСКИДКА ДЛЯ БОНУСОВ 13%'
+            - '&6« &b&lВЫГОДА 17% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 45%'
+            - '&6« &6&lВЫГОДА 55%'
+            - '&6« &5&lВЫГОДА 68%'
+      cyan:
+        data: 9
+        slot: 19
+        prices:
+          anix: [ 25, 49, 79, 109, 169, 249 ]
+          bonus: [ 89, 149, 237, 329, 499 ]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 15%'
+            - '&6« &b&lВЫГОДА 25% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 40% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &6&lВЫГОДА 63%'
+            - '&6« &5&lВЫГОДА 72%'
+      purple:
+        data: 10
+        slot: 20
+        prices:
+          anix: [ 44, 69, 119, 149, 239, 359 ]
+          bonus: [ 129, 199, 349, 449, 717 ]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 15%'
+            - '&6« &b&lВЫГОДА 25% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 40% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &6&lВЫГОДА 62%'
+            - '&6« &5&lВЫГОДА 70%'
+      blue:
+        data: 11
+        slot: 21
+        prices:
+          anix: [ 39, 59, 99, 139, 209, 329 ]
+          bonus: [ 117, 177, 299, 417, 629 ]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 15%'
+            - '&6« &b&lВЫГОДА 25% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 40% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &6&lВЫГОДА 62%'
+            - '&6« &5&lВЫГОДА 70%'
+      brown:
+        data: 12
+        slot: 22
+        prices:
+          anix: [ 25, 39, 59, 99, 149, 229 ]
+          bonus: [ 79, 117, 177, 299, 449 ]
+          benefit:
+            - '&6« &6&lСКИДКА ДЛЯ БОНУСОВ 13%'
+            - '&6« &b&lВЫГОДА 17% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 45%'
+            - '&6« &6&lВЫГОДА 55%'
+            - '&6« &5&lВЫГОДА 68%'
+      green:
+        data: 13
+        slot: 23
+        prices:
+          anix: [ 29, 49, 79, 109, 169, 249 ]
+          bonus: [ 89, 149, 237, 329, 499 ]
+          benefit:
+            - '&6« &6&lСКИДКА ДЛЯ БОНУСОВ 13%'
+            - '&6« &b&lВЫГОДА 17% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &9&lВЫГОДА 35%'
+            - '&6« &4&lВЫГОДА 45%'
+            - '&6« &6&lВЫГОДА 55%'
+            - '&6« &5&lВЫГОДА 68%'
+      red:
+        data: 14
+        slot: 24
+        prices:
+          anix: [ 39, 69, 109, 149, 239, 349 ]
+          bonus: [ 117, 199, 329, 449, 717 ]
+          benefit:
+            - '&6« &4&lСКИДКА ДЛЯ БОНУСОВ 8%'
+            - '&6« &b&lВЫГОДА 22%'
+            - '&6« &9&lВЫГОДА 41%'
+            - '&6« &4&lВЫГОДА 47%'
+            - '&6« &6&lВЫГОДА 63%'
+            - '&6« &5&lВЫГОДА 75%'
+      black:
+        data: 15
+        slot: 25
+        prices:
+          anix: [ 39, 69, 109, 149, 239, 349 ]
+          bonus: [ 117, 199, 329, 449, 717 ]
+          benefit:
+            - '&6« &5&lСКИДКА ДЛЯ БОНУСОВ 15%'
+            - '&6« &b&lВЫГОДА 25% &4&l+ &4&lСКИДКА ДЛЯ БОНУСОВ 10%'
+            - '&6« &9&lВЫГОДА 37%'
+            - '&6« &4&lВЫГОДА 50%'
+            - '&6« &6&lВЫГОДА 65%'
+            - '&6« &5&lВЫГОДА 75%'
+    hover-text: '&f&lВыбрать'
+  color-black-list:
+    title: '&8Черный список цветов'
+    size: 45
+    filler-items:
+      white:
+        material: STAINED_GLASS_PANE
+        data: 15
+        slots: [ 0, 8, 9, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 35, 36, 44 ]
+    explainer:
+      player-skull-id: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcwNWZkOTRhMGM0MzE5MjdmYjRlNjM5YjBmY2ZiNDk3MTdlNDEyMjg1YTAyYjQzOWUwMTEyZGEyMmIyZTJlYyJ9fX0='
+      slot: 22
+      name: '&6 Информация'
+      lore:
+        - '&c&l ▲ Заблокированные цвета ▲'
+        - '&7&l ПКМ чтобы перемещать цвета между списками'
+        - '&a&l ▼ Показывающиеся  цвета ▼'
+    blocked-color-slots: [ 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16 ]
+    allowed-color-slots: [ 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+    move-to-blocked-list-hover-message: '&6Поместить цвет в черный список &f(ПКМ)'
+    move-to-allowed-list-hover-message: '&6Поместить цвет в белый список &f(ПКМ)'
+    cant-move-to-blocked-list-all-colors: '&cНужно оставить минимум 1 цвет'
